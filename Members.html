@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Members - Library Management</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <div class="sidebar">
+        <h2>📚 LibManage</h2>
+        <a href="index.html">🏠 Dashboard</a>
+    <a href="books.html">📖 Books</a>
+    <a class="active" href="members.html">👨‍🎓 Members</a>
+    <a href="issue-return.html">🔄 Issue / Return</a>
+</div>
+<main><header><div><h1>Member Management</h1>
+    <p>Manage students and library members.</p>
+</div>
+</header>
+<section class="panel">
+    <div class="toolbar">
+        <input id="search" type="search" placeholder="🔎 Search members...">
+        <button class="btn" id="addMemberBtn" type="button">+ Add Member</button>
+    </div>
+<div class="table-wrap">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Joined</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="memberTable"></tbody>
+    </table>
+</div>
+</section>
+<div class="modal" id="modal">
+    <div class="modal-box">
+        <button class="close" id="closeModal" type="button">
+        </button><h2 id="modalTitle">Add Member</h2>
+<form id="memberForm">
+    <input type="hidden" id="editId">
+    <label>Full Name<input id="name" required></label>
+    <label>Email<input id="email" type="email" required></label>
+    <label>Phone<input id="phone" required></label>
+    <button class="btn" type="submit">Save Member</button>
+</form>
+</div></div>
+</main>
+<script src="js/members.js"></script>
+</body>
+</html>
