@@ -20,7 +20,7 @@ The system is designed with a clean and responsive user interface so that librar
         <td width="50%"><img alt="Screenshot of library management system "src=images/sarv2.png title="Ai " /></td>     
 </tr>
  <tr>
-        <td width="50%"><img alt="Screenshot of library management system "src=images/sarv3.pngt itle="Ai " /></td>
+        <td width="50%"><img alt="Screenshot of library management system "src=images/sarv3.png itle="Ai " /></td>
         <td width="50%"><img alt="Screenshot of library management system "src=images/sarv4.png title="Ai " /></td>      
 </tr> 
 </table>
