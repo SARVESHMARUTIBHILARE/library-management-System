@@ -167,6 +167,12 @@ The Issue and Return module manages book circulation.
 
 ---
 
+👨‍💻 Developer
+
+Your Name:Bhilare Sarvesh Maruti Bhilare
+
+🔗 GitHub: https://github.com/SARVESHMARUTIBHILARE
+
 ## 💰 Fine Calculation
 
 The system calculates overdue fines based on the number of overdue days.
@@ -176,9 +182,3 @@ The system calculates overdue fines based on the number of overdue days.
 ```text
 Fine = Number of Overdue Days × ₹5
 
-
-👨‍💻 Developer
-
-Your Name:Bhilare Sarvesh Maruti Bhilare
-
-🔗 GitHub: https://github.com/SARVESHMARUTIBHILARE
