@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Books - Library Management</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="sidebar"><h2>📚 LibManage</h2>
+        <a href="index.html">🏠 Dashboard</a>
+        <a class="active" href="books.html">📖 Books</a>
+        <a href="members.html">👨‍🎓 Members</a>
+        <a href="issue-return.html">🔄 Issue / Return</a>
+    </div>
+<main>
+    <header>
+        <div>
+            <h1>Book Management</h1>
+            <p>Add, edit, search and delete library books.</p>
+        </div>
+    </header>
+<section class="panel">
+    <div class="toolbar">
+        <input id="search" placeholder="🔎 Search books...">
+        <button class="btn" onclick="openModal()">+ Add Book</button>
+    </div>
+<div class="table-wrap">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Year</th>
+                <th>Copies</th>
+                <th>Available</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="bookTable">
+        </tbody>
+    </table>
+</div>
+</section>
+<div class="modal" id="modal">
+    <div class="modal-box">
+        <button class="close" onclick="closeModal()">
+        </button><h2 id="modalTitle">Add Book</h2>
+<form id="bookForm">
+    <input type="hidden" id="editId">
+    <label>Book Title<input id="title" required></label>
+    <label>Author<input id="author" required></label>
+    <label>Category<input id="category" required></label>
+    <label>Publication Year<input id="year" type="number" required></label>
+    <label>Total Copies<input id="copies" type="number" min="1" required></label>
+    <button class="btn" type="submit">Save Book</button>
+</form>
+</div></div>
+</main>
+<script src="js/books.js"></script>
+</body>
+</html>
