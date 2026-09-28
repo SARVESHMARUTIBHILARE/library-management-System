@@ -1,175 +1,164 @@
-📚 Library Management System
-📌 Project Overview
+# 📚 Library Management System
 
-The Library Management System (LMS) is a web-based application developed to digitize and simplify the management of library operations. It provides a centralized platform for managing books, members, book issuing, book returning, due dates, and fines.
+A modern and user-friendly **Library Management System** designed to digitize and simplify library operations. The system allows librarians to manage books, members, book issuing and returning, due dates, overdue records, and fines through a centralized web interface.
 
-The system offers a clean and responsive user interface that allows librarians to efficiently maintain library records, monitor book availability, and track borrowing activities. It reduces manual paperwork and makes library information easier to search, update, and manage.
+---
 
-🎯 Project Objectives
-No.	Objective
-1	Digitize library records and daily operations
-2	Manage books and their availability efficiently
-3	Maintain member information in an organized manner
-4	Track book issuing and returning activities
-5	Monitor due dates and overdue books
-6	Calculate fines for overdue books
-7	Provide quick search and filtering functionality
-8	Reduce manual paperwork and improve efficiency
-✨ Key Features
-Module	Description
-📊 Dashboard	Displays total books, available books, issued books, members, and fines
-📚 Book Management	Add, edit, delete, search, and manage books
-👨‍🎓 Member Management	Register, update, search, and manage library members
-🔄 Issue Management	Issue books to registered members and record issue dates
-↩️ Return Management	Record returned books and update availability
-📅 Due Date Tracking	Monitor book return deadlines
-⚠️ Overdue Tracking	Identify books that have exceeded their due dates
-💰 Fine Management	Calculate fines for overdue books
-🔍 Search & Filter	Quickly find books and member records
-📱 Responsive UI	Supports desktop, laptop, tablet, and mobile screens
-🛠️ Technology Stack
-Technology	Purpose
-HTML5	Creates the structure and content of web pages
-CSS3	Provides styling, layouts, animations, and responsive design
-JavaScript	Handles application logic and user interactions
-LocalStorage	Stores library data directly in the browser
-📊 Dashboard
+## 📌 Project Overview
 
-The dashboard provides a quick overview of library activities.
+The **Library Management System (LMS)** is a web-based application developed to reduce manual library work and improve the organization of library records. It provides an interactive dashboard and dedicated modules for managing books, members, issue/return transactions, due dates, and fines.
 
-Statistic	Description
-Total Books	Total number of books registered in the system
-Available Books	Books currently available for issuing
-Issued Books	Books currently borrowed by members
-Total Members	Number of registered library members
-Overdue Books	Books that have passed their due date
-Total Fine	Total calculated overdue fine
-📚 Book Management
+The system is designed with a clean and responsive user interface so that library information can be easily accessed, searched, updated, and maintained.
 
-The Book Management module allows the librarian to maintain complete book records.
+---
 
-Book Information
-Field	Description
-Book ID	Unique identification number
-Title	Name of the book
-Author	Book author
-Category	Book category or subject
-ISBN	International Standard Book Number
-Quantity	Total number of copies
-Available Copies	Currently available copies
-Status	Available, issued, or unavailable
-👨‍🎓 Member Management
+## 🎯 Project Objectives
 
-The Member Management module maintains information about students or other registered library members.
+| No. | Objective |
+|---:|---|
+| 1 | Digitize library records and daily operations |
+| 2 | Simplify book management and circulation |
+| 3 | Maintain member information efficiently |
+| 4 | Track issued and returned books |
+| 5 | Monitor book availability and due dates |
+| 6 | Identify overdue books |
+| 7 | Calculate overdue fines |
+| 8 | Provide quick search and filtering |
+| 9 | Reduce manual paperwork |
+| 10 | Improve overall library management efficiency |
 
-Field	Description
-Member ID	Unique member identification
-Name	Member's full name
-Email	Member's email address
-Phone	Contact number
-Join Date	Membership registration date
-Status	Active or inactive
-🔄 Book Issue & Return
+---
 
-The system records every book circulation transaction.
+## ✨ Key Features
 
-Information	Description
-Issue ID	Unique transaction ID
-Book	Issued book
-Member	Member borrowing the book
-Issue Date	Date the book was issued
-Due Date	Expected return date
-Return Date	Actual return date
-Status	Issued or returned
-Fine	Applicable overdue amount
-💰 Fine Calculation
+| Module | Description |
+|---|---|
+| 📊 Dashboard | Displays important library statistics |
+| 📚 Book Management | Add, edit, delete, search, and manage books |
+| 👨‍🎓 Member Management | Register, update, search, and manage members |
+| 🔄 Issue Management | Issue books to registered members |
+| ↩️ Return Management | Record returned books |
+| 📅 Due Date Tracking | Monitor book return deadlines |
+| ⚠️ Overdue Management | Identify books that have passed their due dates |
+| 💰 Fine Management | Calculate fines for overdue books |
+| 🔍 Search & Filter | Quickly find books and member records |
+| 📱 Responsive UI | Supports desktop, laptop, tablet, and mobile screens |
 
-For overdue books, the system calculates the fine according to the number of overdue days.
+---
 
-Fine = Overdue Days × ₹5
+## 🛠️ Technology Stack
 
-Example:
+| Technology | Purpose |
+|---|---|
+| HTML5 | Creates the structure of web pages |
+| CSS3 | Provides styling and responsive layouts |
+| JavaScript | Handles application logic and interactions |
+| LocalStorage | Stores application data in the browser |
+| Visual Studio Code | Development environment |
+| Live Server | Local development and testing |
 
-Overdue Days	Fine
-1 day	₹5
-3 days	₹15
-5 days	₹25
-10 days	₹50
-💾 Data Storage
+---
 
-The current version uses Browser LocalStorage for storing application data.
+## 📊 Dashboard
 
-Data	Storage
-Books	LocalStorage
-Members	LocalStorage
-Issue Records	LocalStorage
-Return Records	LocalStorage
-Fine Information	LocalStorage
+The dashboard provides a quick overview of the library.
 
-Note: LocalStorage is suitable for this frontend/academic version. A production system can be connected to a backend and database such as MySQL or MongoDB.
+| Statistic | Description |
+|---|---|
+| Total Books | Total number of books registered |
+| Available Books | Books currently available for issuing |
+| Issued Books | Books currently borrowed by members |
+| Total Members | Number of registered members |
+| Overdue Books | Books that have passed their due date |
+| Total Fine | Total calculated overdue fine |
 
-📂 Project Modules
-Library Management System
-│
-├── Dashboard
-├── Book Management
-├── Member Management
-├── Issue Book
-├── Return Book
-├── Due Date Tracking
-├── Overdue Management
-└── Fine Management
-🚀 How to Run
-Using Visual Studio Code
-Download and extract the project.
-Open the project folder in Visual Studio Code.
-Install the Live Server extension.
-Open index.html.
-Right-click on the file.
-Select Open with Live Server.
-The application will open in your web browser.
-Main Entry File
-index.html
-📱 Responsive Design
+---
 
-The application is designed to provide a consistent experience across:
+## 📚 Book Management
 
-Device	Support
-Desktop	✅
-Laptop	✅
-Tablet	✅
-Mobile	✅
-🔮 Future Scope
-Feature	Description
-🔐 Authentication	Secure librarian and member login
-🗄️ Database	MySQL or MongoDB integration
-🌐 Backend API	Connect frontend with a server-side application
-📖 Online Reservation	Allow members to reserve books online
-📷 QR/Barcode	Scan books using QR or barcode technology
-🔔 Notifications	Automatic due-date and overdue notifications
-💳 Advanced Fine System	More flexible fine calculation and payment tracking
-📊 Advanced Analytics	Detailed reports and library statistics
-☁️ Cloud Deployment	Host the system online
-⚛️ React + TypeScript	Upgrade the frontend to a component-based architecture
-🎯 Project Benefits
-Benefit	Description
-Efficiency	Reduces manual library management work
-Organization	Keeps records structured and easy to access
-Accuracy	Reduces errors in book circulation records
-Accessibility	Makes information easier to search
-Monitoring	Helps track issued and overdue books
-User Experience	Provides a simple and responsive interface
-📜 License
+The Book Management module allows librarians to maintain complete book records.
 
-This project is developed for educational and academic purposes.
+### Book Information
 
-👨‍💻 Technology Summary
-Category	Technology
-Frontend	HTML5, CSS3, JavaScript
-Data Storage	Browser LocalStorage
-Development Tool	Visual Studio Code
-Local Testing	Live Server
-Version Control	Git / GitHub
-📚 Library Management System
+| Field | Description |
+|---|---|
+| Book ID | Unique identification number |
+| Title | Name of the book |
+| Author | Author of the book |
+| Category | Book category or subject |
+| ISBN | International Standard Book Number |
+| Quantity | Total number of copies |
+| Available Copies | Number of currently available copies |
+| Status | Current availability status |
 
-A simple, efficient, and user-friendly digital solution for modern library management.
+### Book Operations
+
+- Add new books
+- Edit book information
+- Delete books
+- Search books
+- Filter books
+- Check availability
+- Manage book categories
+
+---
+
+## 👨‍🎓 Member Management
+
+The Member Management module maintains information about registered library members.
+
+| Field | Description |
+|---|---|
+| Member ID | Unique member identification |
+| Name | Member's full name |
+| Email | Member's email address |
+| Phone | Member's contact number |
+| Join Date | Membership registration date |
+| Status | Active or inactive |
+
+### Member Operations
+
+- Add members
+- Edit member information
+- Delete members
+- Search members
+- View member details
+- Track borrowing activity
+
+---
+
+## 🔄 Book Issue & Return Management
+
+The Issue and Return module manages book circulation.
+
+| Information | Description |
+|---|---|
+| Issue ID | Unique transaction ID |
+| Book | Book issued to the member |
+| Member | Member borrowing the book |
+| Issue Date | Date when the book was issued |
+| Due Date | Expected return date |
+| Return Date | Actual return date |
+| Status | Issued or returned |
+| Fine | Applicable overdue amount |
+
+### Operations
+
+- Issue available books
+- Select registered members
+- Set due dates
+- Return books
+- Update book availability
+- Track issue history
+- Identify overdue books
+
+---
+
+## 💰 Fine Calculation
+
+The system calculates overdue fines based on the number of overdue days.
+
+### Formula
+
+```text
+Fine = Number of Overdue Days × ₹5
