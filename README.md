@@ -12,6 +12,19 @@ The system is designed with a clean and responsive user interface so that librar
 
 ---
 
+### 📸 Screenshots Section 1 ###
+
+<table width="100%">
+    <tr>
+        <td width="33%"><img alt="Screenshot of hospital management system "src=images/12.jpg title="Ai " /></td>
+        <td width="33%"><img alt="Screenshot of hospital management system "src=images/11.jpg title="Ai " /></td>     
+</tr>
+ <tr>
+        <td width="33%"><img alt="Screenshot of hospital management system "src=images/23.jpg title="Ai " /></td>
+        <td width="33%"><img alt="Screenshot of hospital management system "src=images/33.jpg title="Ai " /></td>      
+</tr> 
+</table>
+
 ## 🎯 Project Objectives
 
 | No. | Objective |
