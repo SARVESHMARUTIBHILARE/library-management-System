@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Issue & Return - Library Management</title>
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+    <div class="sidebar"><h2>📚 LibManage</h2>
+        <a href="index.html">🏠 Dashboard</a>
+        <a href="books.html">📖 Books</a>
+        <a href="members.html">👨‍🎓 Members</a>
+        <a class="active" href="issue-return.html">🔄 Issue / Return</a>
+    </div>
+<main>
+    <header>
+        <div>
+            <h1>Issue & Return</h1>
+            <p>Track issued books and returns.</p>
+        </div>
+    </header>
+<section class="panel">
+    <h2>Issue a Book</h2>
+    <form id="issueForm" class="grid-form">
+        <label>Book<select id="bookSelect" required></select></label>
+        <label>Member<select id="memberSelect" required></select></label>
+        <label>Due Date<input id="dueDate" type="date" required></label>
+        <button class="btn" type="submit">Issue Book</button>
+    </form>
+</section>
+<section class="panel">
+    <div class="toolbar">
+        <h2>Issue Records</h2>
+        <input id="search" placeholder="🔎 Search records...">
+    </div>
+<div class="table-wrap">
+    <table>
+        <thead>
+            <tr>
+                <th>Book</th>
+                <th>Member</th>
+                <th>Issue Date</th>
+                <th>Due Date</th>
+                <th>Fine</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="issueTable"></tbody>
+    </table>
+</div>
+</section>
+</main>
+<script src="js/issue-return.js"></script>
+</body>
+</html>
